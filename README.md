@@ -8,6 +8,8 @@ SimpleBlog is a completely responsive personal blog website that is compatible w
  
  </div>
 
-## License
+
 
 This project is **free to use** and does not contains any license and Don't Forget to give credit.
+
+This PR if only for letting know how things works .
