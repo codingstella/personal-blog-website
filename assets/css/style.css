@@ -211,13 +211,13 @@ html {
 }
 
 .btn-secondary {
-  background: var(--action-secondary);
-  color: var(--foreground-secondary);
-  padding: 0.5rem 1rem;
-  border: 3px solid var(--foreground-tertiary);
+  background: var(--accent);
+  color: var(--white);
+  padding: 0.6875rem 1.1875rem;
 }
 
-.btn-secondary:hover { border-color: var(--accent); }
+.btn-secondary:hover { background: var(--foreground-secondary);
+  color: var(--action-primary); }
 
 
 
