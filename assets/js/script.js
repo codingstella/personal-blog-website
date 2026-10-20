@@ -39,3 +39,19 @@ for (let i = 0; i < themeBtn.length; i++) {
   })
 
 }
+
+const readMoreBtns = document.querySelectorAll('.read-more-btn');
+
+readMoreBtns.forEach((btn) => {
+  btn.addEventListener('click', function () {
+    const blogText = this.previousElementSibling; 
+    
+    blogText.classList.toggle('expanded');
+
+    if (blogText.classList.contains('expanded')) {
+      this.textContent = 'Read Less';
+    } else {
+      this.textContent = 'Read More';
+    }
+  });
+});

@@ -444,7 +444,41 @@ header .btn-group {
   text-decoration-thickness: 2px;
 }
 
-.blog-text,
+.blog-text{
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.blog-text.expanded {
+  display: block;
+  -webkit-line-clamp: unset;
+  line-clamp: unset;
+  overflow: visible;
+  margin-bottom: 1rem;
+}
+
+.read-more-btn {
+  background: transparent;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: var(--fs-4);
+  padding: 0;
+  margin-bottom: 1rem;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.read-more-btn:hover {
+  color: var(--foreground-primary);
+}
+
 .profile-wrapper { display: none; }
 
 .blog .wrapper {
